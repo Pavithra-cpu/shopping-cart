@@ -1,0 +1,167 @@
+<web-app>
+
+  <servlet>
+    <servlet-name>Additem</servlet-name>
+    <servlet-class>Additem</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Additem</servlet-name>
+    <url-pattern>/Additem</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Dispitem</servlet-name>
+    <servlet-class>Dispitem</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Dispitem</servlet-name>
+    <url-pattern>/Dispitem</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Reqitem</servlet-name>
+    <servlet-class>Reqitem</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Reqitem</servlet-name>
+    <url-pattern>/Reqitem</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Dispreq</servlet-name>
+    <servlet-class>Dispreq</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Dispreq</servlet-name>
+    <url-pattern>/Dispreq</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Username</servlet-name>
+    <servlet-class>Username</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Username</servlet-name>
+    <url-pattern>/Username</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Writeitem</servlet-name>
+    <servlet-class>Writeitem</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Writeitem</servlet-name>
+    <url-pattern>/Writeitem</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Viewpur</servlet-name>
+    <servlet-class>Viewpur</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Viewpur</servlet-name>
+    <url-pattern>/Viewpur</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Viewuser</servlet-name>
+    <servlet-class>Viewuser</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Viewuser</servlet-name>
+    <url-pattern>/Viewuser</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>Logout</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DispitemU</servlet-name>
+    <servlet-class>DispitemU</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DispitemU</servlet-name>
+    <url-pattern>/DispitemU</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DispitemA</servlet-name>
+    <servlet-class>DispitemA</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DispitemA</servlet-name>
+    <url-pattern>/DispitemA</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Disppur</servlet-name>
+    <servlet-class>Disppur</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Disppur</servlet-name>
+    <url-pattern>/Disppur</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Dispuser</servlet-name>
+    <servlet-class>Dispuser</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Dispuser</servlet-name>
+    <url-pattern>/Dispuser</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Deleteitem</servlet-name>
+    <servlet-class>Deleteitem</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Deleteitem</servlet-name>
+    <url-pattern>/Deleteitem</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Removefromcart</servlet-name>
+    <servlet-class>Removefromcart</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Removefromcart</servlet-name>
+    <url-pattern>/Removefromcart</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Checkout</servlet-name>
+    <servlet-class>Checkout</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Checkout</servlet-name>
+    <url-pattern>/Checkout</url-pattern>
+  </servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>Home.jsp</welcome-file>
+  </welcome-file-list>
+
+</web-app>

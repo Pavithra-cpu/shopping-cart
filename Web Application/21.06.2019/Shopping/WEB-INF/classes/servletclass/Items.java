@@ -5,7 +5,7 @@ import java.util.*;
 public class Items implements Serializable {
 
     private String iname;
-    //private int quantity;
+    private int quantity;
     private String price;
 
     public void setIname(String iname) {
