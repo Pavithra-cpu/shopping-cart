@@ -1,0 +1,24 @@
+user	deep
+
+CREATE DATABASE shopdata
+
+CREATE TABLE items (
+		id BIGSERIAL NOT NULL PRIMARY KEY, 
+		itemname VARCHAR(30) NOT NULL, 
+		quantity INT NOT NULL, 
+		price INT NOT NULL);
+[ 'id' is the FOREIGN KEY ]
+
+CREATE TABLE purchases (
+		pid BIGSERIAL NOT NULL PRIMARY KEY, 
+		uid INT NOT NULL, 
+		username VARCHAR(30) NOT NULL, 
+		count INT NOT NULL);
+
+CREATE TABLE requests (
+		id BIGSERIAL NOT NULL PRIMARY KEY, 
+		request VARCHAR(30) NOT NULL);
+
+CREATE TABLE users (
+		id BIGSERIAL NOT NULL, 
+		username VARCHAR(30) NOT NULL);
