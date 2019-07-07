@@ -7,22 +7,24 @@ CREATE TABLE items (
 		itemname VARCHAR(30) NOT NULL, 
 		quantity INT NOT NULL, 
 		price INT NOT NULL);
-[ 'id' is the FOREIGN KEY ]
 
-CREATE TABLE purchases (
-		pid INT NOT NULL, 
+CREATE TABLE users(
+ 		uid BIGSERIAL NOT NULL PRIMARY KEY,
+ 		username VARCHAR(30) NOT NULL,
+ 		email VARCHAR(30) NOT NULL UNIQUE);
+
+CREATE TABLE cart(
+		uid INT NOT NULL,
+		item_id BIGINT REFERENCES items (id) NOT NULL,
+		cquantity INT);
+
+CREATE TABLE purchases(
+		pid UUID NOT NULL, 
 		user_id BIGINT REFERENCES users (uid) NOT NULL, 
 		item_id BIGINT REFERENCES items (id) NOT NULL,
 		pquantity INT NOT NULL);
 
-CREATE TABLE requests (
+CREATE TABLE requests(
 		id BIGSERIAL NOT NULL PRIMARY KEY, 
 		request VARCHAR(30) NOT NULL);
 
-/*CREATE TABLE users (
-		id BIGSERIAL NOT NULL, 
-		username VARCHAR(30) NOT NULL);*/
-CREATE TABLE users(
- 		uid BIGSERIAL NOT NULL,
- 		username VARCHAR(30) NOT NULL,
- 		email VARCHAR(30) NOT NULL PRIMARY KEY);
